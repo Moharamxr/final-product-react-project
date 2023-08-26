@@ -24,7 +24,7 @@ const Login = () => {
           userData: data,
         };
       });
-      navigate("/mytodos");
+      navigate("/products");
     },
     validationSchema: Yup.object().shape({
       username: Yup.string().required("Username is required"),
