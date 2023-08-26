@@ -60,21 +60,21 @@ const Navbar = () => {
        
       )}
       {!isLoggedIn && (
-        <div className="d-flex justify-content-between align-items-center">
-          <p className="text-white fs-5">Login/Register First</p>
-          <ul className="navbar-nav d-flex gap-3 align-items-center">
-            <li className="nav-item">
-              <NavLink className="nav-link" to={"/register"}>
-                Register
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to={"/login"}>
-                Login
-              </NavLink>
-            </li>
-          </ul>
-        </div>
+        <div className="bg-dark p-3">
+          <h3 className="text-white">Welcome Back!</h3>
+        <ul className="navbar-nav flex-row gap-3 d-flex ">
+          <li className="nav-item">
+            <NavLink className="nav-link text-white" to={"/register"}>
+              Register
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link text-white" to={"/login"}>
+              Login
+            </NavLink>
+          </li>
+        </ul>
+      </div>
       )}
     </nav>
   );
